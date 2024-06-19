@@ -9,6 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Prerequisites
 
 - Node.js
+- Express.js
 - npm
 
 ### Installing Dependencies
