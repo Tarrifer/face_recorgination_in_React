@@ -23,6 +23,10 @@ npm install
 In the `server` directory, run:
 
 ```bash
+npm install 
+```
+And 
+```bash
 npm install --save-dev nodemon
 ```
 
