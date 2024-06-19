@@ -1,6 +1,85 @@
-# Getting Started with Create React App
+# Face Recognition Attendance System
+
+This project is a face recognition-based attendance system built using React and face-api.js. The primary functionality is to detect and recognize faces from a live webcam feed, recording attendance based on the recognized faces.
+
+## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Prerequisites
+
+- Node.js
+- Express.js
+- npm
+
+### Installing Dependencies
+
+In the project root directory, run:
+
+```bash
+npm install
+```
+
+In the `server` directory, run:
+
+```bash
+npm install 
+```
+And 
+```bash
+npm install --save-dev nodemon
+```
+
+### Running the Application
+
+In the project directory, you can run:
+
+#### `npm start`
+
+Runs the app in development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### Building the Application
+
+#### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+### Running the Server
+
+To start the server, navigate to the `server` directory and run:
+
+```bash
+npm run dev
+```
+
+This will start the server using nodemon for automatic restarts on code changes.
+
+### Issues
+
+- **Path Issue**: The path for the `labeled_images` folder couldn't be resolved, so it has to be placed in the `public` folder.
+- **Model Loading Time**: Loading the face recognition models can take time. It is recommended to wait for 30 seconds and then reload the website.
+- **Database Functions**: 
+  - The function to record viewing users in the database has not been added yet.
+  - The function to add a user for face recognition has not been added yet.
+
+### Dependencies
+
+- [face-api.js](https://github.com/justadudewhohacks/face-api.js)
+- [React Router DOM](https://reactrouter.com/web/guides/quick-start)
+
+### Future Improvements
+
+- **Database Integration**: Implement functionality to record attendance in the database.
+- **User Management**: Add functionality to add and manage users for face recognition.
+- **Session Management**: Implement session management to check presence/absence within the live stream session.
 
 ## Available Scripts
 
@@ -10,9 +89,6 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm test`
 
@@ -24,20 +100,11 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
@@ -47,24 +114,24 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This section has moved [here](https://facebook.github.io/create-react-app/docs/code-splitting).
 
 ### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This section has moved [here](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size).
 
 ### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This section has moved [here](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app).
 
 ### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This section has moved [here](https://facebook.github.io/create-react-app/docs/advanced-configuration).
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This section has moved [here](https://facebook.github.io/create-react-app/docs/deployment).
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved [here](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify).
